@@ -140,16 +140,10 @@ if has('persistent_undo')
   set undofile
 endif
 
-
 let is_tmux = $TMUX
 if is_tmux != ""
   autocmd VimEnter * VtrAttachToPane
 endif
-
-let g:solarized_termtrans=1
-syntax enable
-set background=dark
-colorscheme solarized
 
 " This gets the current directory name, not the fullpath, needed to see if the
 " ./script/<dirname> exists so it can be called when running specs

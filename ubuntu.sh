@@ -14,7 +14,7 @@ install_libraries() {
     python3-pip \
     xdotool \
     xclip \
-    exuberant-ctags \
+    exuberant-ctags
 }
 
 # Install fuzzy finder https://github.com/junegunn/fzf

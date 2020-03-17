@@ -32,10 +32,3 @@ export PS1="${debian_chroot:+($debian_chroot)}\u@\h\[\033[00m\]:\[\033[32m\]\w\[
 
 [ -f ~/.fzf.bash  ] && source ~/.fzf.bash
 
-function vimo() {
-  if test -f Session.vim; then
-    env vim -S
-  else
-    env vim -c Obsession "$@"
-  fi
-}
